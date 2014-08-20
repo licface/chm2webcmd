@@ -8,7 +8,7 @@ import fileinput
 import re
 
 __version__ = "1.0"
-__test__ = "0.2"
+__test__ = "0.3"
 __author__ = "licface"
 __url__ = "licface@yahoo.com"
 __email__ = "licface@yahoo.com"
@@ -389,12 +389,14 @@ class chm2web:
 		parser.add_option("-i", "--index", help="Index File Name Of File Of Extracted, default='index.html'", action="store")
 		parser.add_option("-x", "--var-index", help="Variable Index Name (default: 'Index')", action="store")
 		parser.add_option("-e", "--query-len", help="Index Search Query Len, default= 1", action="store", type=int)
-		parser.add_option("-T", "--show-Template", help="Show Template List", action="store_true")
+		parser.add_option("-T", "--show-template", help="Show Template List", action="store_true")
 		parser.add_option("-g", "--run-background", help="Run in Background", action="store_true")
 		parser.add_option("-v", "--verbosity", help="Show running process", action="count")
 		options, args = parser.parse_args(sys.argv)
 		if len(sys.argv) > 1:
 			#print "options =", options, "\n"
+			if options.show_template:
+				print self.showTemplate()
 			if options.set:
 				self.set(options.project, options.file, options.template, options.home_url, options.caption, options.side_path, options.target_folder, options.index, options.var_index, options.query_len, options.no_browser, options.quiet, options.no_run, options.verbosity, options.run_background)
 			else:
