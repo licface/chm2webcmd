@@ -98,7 +98,7 @@ class chm2web:
 
 	def set_targetfolder(self, folder):
 		if not os.path.isdir(folder):
-			os.mkdir(folder)
+			os.makedirs(folder)
 		configset.write_config('MAIN', 'TargetFolder', self.default_project_file, folder)
 
 	def get_indexfilename(self, indexfile):

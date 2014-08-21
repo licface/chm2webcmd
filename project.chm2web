@@ -1,17 +1,17 @@
 [VAR]
-varPageCaption=Python Web Documentation 0.5.3
+varPageCaption=Manual PHPMaker V10
 varContentswidth=250
 varContents=Contents
 varIndex=Index
 varSearch=Search
-varHomeUrl=http://docs.pythonweb.net
+varHomeUrl=http://docs.phpmaker10.net
 varHomeCap=Home
 varPrintCap=Print Page
 varPrevCap=Prev Page
 varNextCap=Next Page
 
 [OPTIONS]
-Template=c:\Program Files\A!K Research Labs\chm2web\Templates\modern_bl.cwtpl
+Template=c:\Program Files\A!K Research Labs\chm2web\Templates\modern_rd.cwtpl
 ConvertStyle=0
 HelpSrcFolder=source
 AddAklabsLink=1
@@ -33,11 +33,11 @@ ExpandRootNodes=0
 OpenFrameset=1
 ChangeCase=1
 ServerSidePHP=0
-ServerSidePath=http://docs.pythonweb.net
+ServerSidePath=http://docs.phpmaker10.net
 
 [MAIN]
-SourceFile=c:\TEMP\me\PythonWeb-0.5.3-docs.chm
-TargetFolder=d:\WWW\pypi\pythonweb
+SourceFile=c:\Program Files\PHPMaker 10\PHPMaker.chm
+TargetFolder=d:\WWW\phpmaker\10
 IndexFileName=index.html
 HelpChangeExt=0
 HelpChangeExtOn=html
